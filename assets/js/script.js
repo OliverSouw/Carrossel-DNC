@@ -58,10 +58,7 @@ function show(indexBtn) {
         btnPrevius.classList.remove('show-img-btn');
         btnNext.classList.add('show-img-btn');
         circleActived[list.length - 1].classList.add('circle-actived');
-    } else {
-        return false;
     }
-
 }
 
 function changeModal(modalOpen) {
