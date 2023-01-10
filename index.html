@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bye Car</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://kit.fontawesome.com/91a37bd298.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <header>
+        <img src="assets/img/logo-dnc.svg" alt="logo dnc">
+        <h1>ByeCar</h1>
+    </header>
+
+    <main>
+
+        <section class="section-main">
+
+            <div class="section-container">
+                <h3 class="title">Ter <span class="strong-left">uma moto</span> por assinatura nunca foi tão fácil!</h3>
+                <img class="woman-img" src="assets/img/woman-img.png" alt="">
+            </div>
+
+            <div class="section-container">
+                <h3 class="title">Conheça nossas <span class="strong-right">motos</span>!</h3>
+                <div class="card-arrows"> 
+                    <button onclick="show(-1)" class="btn-card">
+                        <img class="btn-img-previus show-img-btn" src="assets/img/arrow-left.svg" alt=""> 
+                    </button>
+                    <ul class="card-itens">
+                        <li class="cards">
+                            <h2 class="card-item-name">Scooter Elétrica Voltz EV1</h2>
+                            <img class="card-item-img" src="assets/img/moto1.png" alt="">
+                            <p class="card-information-price">A partir de</p>
+                            <span class="card-price">R$ 619,90</span>
+                            <p>Plano de 30 meses</p>
+                        </li>
+                        <li class="cards">
+                            <h2 class="card-item-name">Honda CB 500X</h2>
+                            <img class="card-item-img" src="assets/img/moto2.svg" alt="">
+                            <p class="card-information-price">A partir de</p>
+                            <span class="card-price">R$ 890,90</span>
+                            <p>Plano de 12 meses</p> 
+                        </li>
+                        <li class="cards">
+                            <h2 class="card-item-name">Honda PCX</h2>
+                            <img class="card-item-img" src="assets/img/moto3.png" alt="">
+                            <p class="card-information-price">A partir de</p>
+                            <span class="card-price">R$ 490,90</span>
+                            <p>Plano de 15 meses</p> 
+                        </li>
+                        <li class="cards">
+                            <h2 class="card-item-name">CBR 1000</h2>
+                            <img class="card-item-img" src="assets/img/moto4.png" alt="">
+                            <p class="card-information-price">A partir de</p>
+                            <span class="card-price">R$ 1.490,90</span>
+                            <p>Plano de 20 meses</p> 
+                        </li>
+                    </ul>
+                    <button onclick="show(1)" class="btn-card">
+                        <img class="btn-img-next" src="assets/img/arrow-right.svg" alt=""> 
+                    </button>
+                </div>
+                <div class="show-selected">
+                    <ul>
+                        <li class="section-circle circle-actived"></li>
+                        <li class="section-circle"></li>
+                        <li class="section-circle"></li>
+                        <li class="section-circle"></li>
+                    </ul>
+                </div>
+                <button onclick="changeModal(0)" class="btn-card-item" href="">Saiba mais</button>
+            </div>
+
+        </section>
+
+        <section class="modal"></section>
+
+    </main>  
+
+    <script src="assets/js/script.js"></script>
+
+</body>
+</html>
